@@ -21,3 +21,9 @@ print("Sum of Elements:", sum)
 print("\n-----Calculating Min and Max Values in List----\n")
 print("Min value:", minVal)
 print("Max value:", maxVal)
+
+i = int(input(f"Enter index of the list to update (0-{content-1}): "))
+updateVal = int(input("Enter Value: "))
+list[i] = updateVal
+
+print("Value Succesfully updated at list[", i, "]: ",list[i] )
