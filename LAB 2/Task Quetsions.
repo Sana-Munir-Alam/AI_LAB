@@ -1,0 +1,44 @@
+TASK #1
+You are developing a simple AI-powered cybersecurity system to manage different
+types of security agents. All agents share common attributes like agent_id, name, and
+status, but each type has its own specialized role. For example, FirewallAgent monitors
+network traffic, MalwareDetectionAgent scans files for threats, and AutomationAgent
+performs routine AI-based tasks to optimize system security. Your task is to create a
+base class SecurityAgent and derive classes for each agent type, implementing type-
+specific methods like monitor_traffic(), scan_files(), or run_automation(). Create objects
+for each agent type and call their methods to simulate how a cybersecurity system can
+automatically respond to threats using AI automation.
+
+TASK #2
+You are building an AI-based threat intelligence system that tracks different types of
+cybersecurity threats. All threats share common attributes like threat_id, name, and
+severity. Derived classes include PhishingThreat (monitors emails), RansomwareThreat
+(monitors file systems), and BotnetThreat (monitors network traffic). Each class has
+specific methods such as analyze_email(), scan_files(), or detect_traffic(). Your task is to
+create the base and derived classes, instantiate objects, and call their methods to
+simulate an automated threat response system.
+
+TASK #3
+You are designing an AI system to automatically respond to cybersecurity threats. There
+are different types of response agents: AlertAgent, BlockAgent, and RecoverAgent. All
+agents have a method execute_response(), but each performs a different
+action—AlertAgent sends notifications, BlockAgent blocks malicious activities, and
+RecoverAgent restores affected systems. Your task is to create a base class
+ResponseAgent with a generic execute_response() method, override it in each derived
+class, and then demonstrate polymorphism by calling execute_response() on a list of
+mixed agent objects.
+
+TASK #4
+You are developing a simple employee management system. The base class Employee
+has a method work(). Derived classes like Manager, Developer, and Designer override
+work() with tasks specific to their role. Students should create objects of each employee
+type and call work() to show how polymorphism allows the same method name to
+perform different actions
+
+TASK #5
+You are creating a student grading system. Each student has a private attribute __grade
+representing their score. The class Student should have methods set_grade(grade) to
+update the score, get_grade() to view it, and display_info() to show the student’s name
+and grade. Students should create student objects, update grades using setters, retrieve
+them using getters, and understand how encapsulation keeps the grade secure from
+direct modification.
