@@ -1,0 +1,118 @@
+Task # 1
+A company’s security system consists of nine critical components (A through I). Each component can be either safe or vulnerable due to security flaws. A security agent is
+responsible for scanning the entire system, identifying vulnerabilities, and patching them to prevent attacks.
+You are tasked with simulating a cybersecurity exercise using the given environment and agent. 
+Complete the following steps:
+○ Initial System Check:
+  - The system environment is initialized with random vulnerabilities.
+  - Display the initial state of the system, showing which components are safe and which are vulnerable.
+○ System Scan:
+The security agent scans each component. 
+  - If a component is vulnerable, the agent logs a warning and adds it to a list for patching.
+  - If it is secure, a success message is logged.
+○ Patching Vulnerabilities:
+  - After the scan, the agent patches all vulnerable components, marking them as safe. Display messages indicating which components have been patched.
+○ Final System Check:
+  - Display the system’s final state, confirming that all vulnerabilities have been patched.
+
+Task # 2
+A data center runs multiple servers, each hosting different services. These services are either underloaded, balanced, or overloaded based on the system's load.
+The Load Balancer Agent is responsible for redistributing tasks across the servers to ensure optimal system performance.
+Task:
+● Create a system with 5 servers.
+● Each server has a load state of "Underloaded", "Balanced", or "Overloaded".
+● The Load Balancer Agent must scan the system and move tasks from overloaded servers to underloaded ones to balance the load.
+● After balancing the load, display the updated load status of each server.
+
+
+Task # 3
+A network of servers has a set of backup tasks that need to be completed regularly. Some backups are successful, while others fail.
+The Backup Management Agent is responsible for ensuring all failed backups are retried and completed.
+Task:
+● Create a list of backup tasks with either "Completed" or "Failed" statuses.
+● The Backup Management Agent scans for failed backups and retries them.
+● After retrying, display the updated task statuses.
+
+Task # 4 (utility based agent)
+A cybersecurity exercise is being conducted for a company’s security system, which consists
+of nine critical components (A through I). Each component of the system can either be Safe
+or have Vulnerabilities of varying severity. The company wants to ensure that its system
+remains secure, but it only has access to a basic security service that can patch Low Risk
+Vulnerabilities. High Risk Vulnerabilities require purchasing a premium security service to
+patch.
+In this scenario, the goal is to simulate how a Utility-Based Security Agent scans and
+patches the system based on the vulnerabilities detected and the available resources
+(limited patching service).
+● Initial System Check:
+○ Initialize the system environment with random vulnerabilities (Safe, Low Risk
+Vulnerable, and High Risk Vulnerable).
+○ Display the initial state of the system, showing which components are Safe
+and which have Vulnerabilities.
+
+● System Scan:
+○ The security agent will scan each component.
+○ If a component is Vulnerable, the agent logs a warning.
+○ If it is Safe, a success message is logged.
+● Patching Vulnerabilities:
+○ The agent will patch all Low Risk Vulnerabilities.
+○ The agent will log a message for High Risk Vulnerabilities indicating the need
+for premium service to patch them.
+● Final System Check:
+○ Display the system’s final state to confirm that all Low Risk Vulnerabilities have been patched.
+○ The High Risk Vulnerabilities will remain unresolved unless the premium service is purchased.
+
+
+Task # 5 (Goal based agent)
+In a hospital, a delivery robot is tasked with delivering medicines to patients, assisting
+nurses, and performing other related activities in an efficient manner. The goal of the robot is
+to automatically move through hospital corridors, pick up medicines, deliver them to the
+correct patient rooms, and perform various tasks such as scanning patient IDs or alerting
+staff.
+● Components:
+○ Agent: The hospital delivery robot, which can move around, interact with patient rooms, pick up medicines, deliver them, and alert nurses or doctors when needed.
+● Environment: The hospital layout, including:
+○ Corridors
+○ Patient rooms
+○ Nurse stations
+○ Medicine storage areas
+● Actions:
+○ Move to a location (room, station, etc.).
+○ Pick up medicine from storage.
+○ Deliver medicine to the patient’s room.
+○ Scan patient ID for verification.
+○ Alert staff for critical situations.
+● Perceptions:
+○ Room numbers (where the robot should deliver the medicine).
+○ Patient schedules (timing for when patients need their medicines).
+○ Medicine type (specific medicines to be delivered to patients).
+○ Staff availability (alerts if staff assistance is needed).
+
+Goal-Based Agent Approach:
+Goal: Deliver medicine to patients based on a schedule and room number, while ensuring all
+deliveries are correctly made. The robot must scan the patient's ID before delivering and
+alert nurses or doctors if needed.
+
+
+
+Task # 6
+In a building with multiple rooms, a firefighting robot has been deployed to save lives and
+prevent damage. The building is represented by a 3x3 grid, where each cell corresponds to
+a room. Some rooms contain fires, and others are safe.
+● The robot starts at room 'a' and must move across all rooms, from 'a' to 'j', detecting and extinguishing any fires along the way.
+● The robot needs to be aware of which rooms have fire and must extinguish them by changing the room’s status from "fire" to "safe."
+● The robot needs to continuously display the environment’s status after each move and indicate when fires are detected and extinguished.
+● Initialization:
+○ Implement a 3x3 grid where rooms 'a', 'b', 'd', 'f', 'g', 'h' are safe (no fire), and rooms 'c', 'e', 'j' contain fires.
+○ The robot starts at room 'a' and follows a predefined path: ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'j'].
+● Robot Movement:
+○ The robot should move from room to room in the specified path.
+○ At each room, the robot must check if there is a fire:
+■ If there is a fire, extinguish it and update the room's status to safe.
+■ If there is no fire, move to the next room.
+
+● Displaying the Environment:
+○ After each move, display the current status of the environment.
+○ Use symbols like " " for fire and " " (space) for a safe room to represent the environment visually.
+
+● Final Output:
+○ After the robot has completed its movement, display the final status of all rooms (with all fires extinguished).
