@@ -1,0 +1,21 @@
+TASK #1 
+Convert the following searching algorithms into agent-based models:
+- Depth-Limited Search (DLS): Implement as a Goal-Based Agent to explore the graph up to a specified depth limit.
+- Uniform Cost Search (UCS): Implement as a Utility-Based Agent to find the goal with the minimum cost path.
+
+TASK # 2
+Traveling Salesman Problem:
+Given a set of cities and distances between every pair of cities, the problem is to find the shortest possible
+route that visits every city exactly once and returns to the starting point. Like any problem, which can be optimized,
+there must be a cost function. In the context of TSP, total distance traveled must be reduced as much as possible.
+Consider the below matrix representing the distances (Cost) between the cities. Find the shortest possible route 
+that visits every city exactly once and returns to the starting point.
+dist = {
+    1: {2: 10, 3: 15, 4: 20},
+    2: {1: 10, 3: 35, 4: 25},
+    3: {1: 15, 2: 35, 4: 30},
+    4: {1: 20, 2: 25, 3: 30}
+}
+
+TASK # 3
+Implement Iterative deepening DFS  on graph and tree.
