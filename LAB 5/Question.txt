@@ -1,0 +1,19 @@
+TASK #1
+Enhanced Maze Navigation with Multiple Goals
+● Description: Modify the given Best-First Search to find a path through a maze
+with multiple goal points. The algorithm should visit all goal points and return
+the shortest path covering all goals.
+● Challenge: The maze will have several dead ends and multiple goal points at
+different locations.
+TASK #2
+Implement an A* Search where the edge costs change dynamically at random intervals.
+The algorithm should adapt to these changes and always find the optimal path.
+Recompute and adjust paths in real time without restarting the algorithm from
+scratch.
+TASK #3
+Delivery Route Optimization with Time Windows
+● Description: Using the Greedy Best-First Search, optimize delivery routes for a
+set of delivery points. Each delivery point has a specific time window for
+delivery, and the algorithm must prioritize those with stricter deadlines.
+● Challenge: Ensure that the algorithm handles time constraints efficiently while
+minimizing total travel distance.
